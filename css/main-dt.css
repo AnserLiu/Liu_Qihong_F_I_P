@@ -1,0 +1,712 @@
+/*
+Couples Resort Responsive Build
+4 column grid as per XD file
+ */
+
+/* 
+    CSS Guide 
+
+    1.  General Styles
+    2.  Main Nav
+    3.  Main Hero Image
+    4.  Main Hero Image Contact
+    5.  Why Couples Resort
+    6.  About & FAQ
+    7.  Contact Form
+    8.  Footer 
+ */
+
+
+ /* 1. ---General Styles--- */
+
+
+
+body {
+   color: #626262;
+   font-family: 'Sanchez', 'Times New Roman', serif;
+}
+
+a {
+   text-decoration: none;
+   /* add */
+}
+
+input, textarea {
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+
+.cr-red {
+   color: #9a2018;
+}
+
+
+/* 2. ---Main Nav--- */
+
+ /* add */
+
+#main-nav label img{
+   width: 20px;
+   height: 20px;
+   margin-top: 15px;
+   margin-bottom: 20px;
+   transition: all .5s ease;
+   cursor: pointer;
+}
+
+#main-nav input, #burger-con{
+   display: none;
+}
+
+/*   ~ sibling selector   */
+
+  /* add */
+
+
+
+#main-nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+#main-nav ul li a {
+   display: block;
+   padding: 10px 0 10px 0;
+   height: 43px;
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+   color: #626262;
+}
+
+
+
+   /* add */
+
+
+
+
+.selected{
+   border-bottom: #9a2018 4px solid;
+}
+
+
+#logo {
+   max-width: 382px;
+   height: 43px;
+   margin-top: 10px;
+}
+
+
+/* 3. ---Main Hero Image--- */
+
+#spa-hero {
+   background: url(../images/rmt.png) no-repeat;
+   height: 200px;
+}
+
+#rooms-hero {
+   background: url(../images/rooms.png) no-repeat;
+   height: 200px;
+}
+
+#rooms-hero-dt {
+   background: url(../images/rooms.png) no-repeat;
+   height: 450px;
+   background-size: cover;
+}
+
+#a-hero {
+   background: url(../images/a.png) no-repeat;
+   height: 200px;
+}
+
+.book-now {
+   background-color: #9a2018;
+   color: #fff;
+   font-size: 16px;
+   transition: background-color 500ms linear;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-style: italic;
+      /* add */
+   transition: all 0.3 ease;
+   cursor: pointer;
+   transform: background-color 0.3s ease;
+}
+
+.book-now:hover {
+   background-color: rgb(196, 28, 28);
+}
+
+.book-now:active {
+   animation: pressButton 0.5s forwards;
+}
+
+#book-now-hero {
+   height: 67px;
+}
+
+#hero-heading-box {
+   align-self: end;
+}
+
+.hero-img-h2, .hero-img-h3 {
+   background: #fff;
+   padding: 10px 15px;
+   font-size: 14px;
+}
+
+.hero-img-h2 span,  .hero-img-h3 span {
+   color: #9a2018;
+   font-size: 12px;
+}
+
+.line-separator {
+   margin-top: 20px;
+   border-top: solid 3px #CF6666;
+   padding-top: 20px;
+}
+
+#hero-summary p {
+   font-size: 14px;
+   line-height: 22px;
+   margin-bottom: 20px;
+}
+
+/* 4. ---Main Hero Image Contact--- */
+
+.fas {
+   font-size: 42px;
+   color: #9a2018;
+   margin: 0 auto;
+   float: left;
+}
+
+.fa-mobile-alt {
+   margin-right: 10px;
+   margin-left: 3px;
+   margin-bottom: 20px;
+}
+
+.fa-map-marker-alt {
+   margin-right: 10px;
+}
+
+#contact {
+   font-size: 11px;
+   background-color: #efefef;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+
+
+/* 6. ---About & FAQ--- */
+
+.row-section{
+   display: flex;
+   overflow-x: auto;
+   max-width: 412px;
+   margin: auto;
+   transform: translateX(-15px);
+}
+
+.row-section-dt{
+   display: flex;
+   overflow-x: auto;
+   max-width: 1210px;
+   margin: auto;
+   transform: translateX(-15px);
+}
+
+#hs-hero-con {
+   background: url(../images/hs.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#bm-hero-con {
+   background: url(../images/bm.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#hm-hero-con {
+   background: url(../images/hm.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#ht-hero-con {
+   background: url(../images/ht.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#ft-hero-con {
+   background: url(../images/ft.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#sc-hero-con {
+   background: url(../images/sc.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#wr-hero-con {
+   background: url(../images/wr.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#fa-hero-con {
+   background: url(../images/fa.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#ws-hero-con {
+   background: url(../images/ws.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+#as-hero-con {
+   background: url(../images/as.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#c-hero-con {
+   background: url(../images/c.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#ab-c-hero-con {
+   background: url(../images/ab-c.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#sv-hero-con {
+   background: url(../images/sv.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#ab-sv-hero-con {
+   background: url(../images/ab-sv.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#m-hero-con {
+   background: url(../images/m.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#ab-m-hero-con {
+   background: url(../images/ab-m.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#ex-hero-con {
+   background: url(../images/ex.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#ab-ex-hero-con {
+   background: url(../images/ab-ex.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#ch-hero-con {
+   background: url(../images/ch.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#ab-ch-hero-con {
+   background: url(../images/ab-ch.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#jr-hero-con {
+   background: url(../images/jr.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#ab-jr-hero-con {
+   background: url(../images/ab-jr.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#c-dt-hero-con {
+   background: url(../images/c.png) no-repeat;
+   height: 450px;
+   background-size: cover;
+}
+
+#ab-c-dt-hero-con {
+   background: url(../images/ab-c.png) no-repeat;
+   height: 450px;
+   background-size: cover;
+}
+
+#sv-dt-hero-con {
+   background: url(../images/sv.png) no-repeat;
+   height: 450px;
+   background-size: cover;
+}
+
+#ab-sv-dt-hero-con {
+   background: url(../images/ab-sv.png) no-repeat;
+   height: 450px;
+   background-size: cover;
+}
+
+#m-dt-hero-con {
+   background: url(../images/m.png) no-repeat;
+   height: 450px;
+   background-size: cover;
+}
+
+#ab-m-dt-hero-con {
+   background: url(../images/ab-m.png) no-repeat;
+   height: 450px;
+   background-size: cover;
+}
+
+#ex-dt-hero-con {
+   background: url(../images/ex.png) no-repeat;
+   height: 450px;
+   background-size: cover;
+}
+
+#ab-ex-dt-hero-con {
+   background: url(../images/ab-ex.png) no-repeat;
+   height: 450px;
+   background-size: cover;
+}
+
+#ch-dt-hero-con {
+   background: url(../images/ch.png) no-repeat;
+   height: 450px;
+   background-size: cover;
+}
+
+#ab-ch-dt-hero-con {
+   background: url(../images/ab-ch.png) no-repeat;
+   height: 450px;
+   background-size: cover;
+}
+
+#jr-dt-hero-con {
+   background: url(../images/jr.png) no-repeat;
+   height: 450px;
+   background-size: cover;
+}
+
+#ab-jr-dt-hero-con {
+   background: url(../images/ab-jr.png) no-repeat;
+   height: 450px;
+   background-size: cover;
+}
+
+#pa-hero-con {
+   background: url(../images/pa.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#f-hero-con {
+   background: url(../images/f.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#agl-hero-con {
+   background: url(../images/agl.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#spr-hero-con {
+   background: url(../images/spr.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#sum-hero-con {
+   background: url(../images/sum.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#fal-hero-con {
+   background: url(../images/fal.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#fal-ca-hero-con {
+   background: url(../images/fal-ca.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#fal-mp-hero-con {
+   background: url(../images/fal-mp.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#fal-hb-hero-con {
+   background: url(../images/fal-hb.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#win-hero-con {
+   background: url(../images/win.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#win-wn-hero-con {
+   background: url(../images/win-wn.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#win-sss-hero-con {
+   background: url(../images/win-sss.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#win-ih-hero-con {
+   background: url(../images/win-ih.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+#win-ap-hero-con {
+   background: url(../images/win-ap.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+.spr-sp-hero-con {
+   background: url(../images/spr-sp.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+.spr-aps-hero-con {
+   background: url(../images/spr-aps.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+.spr-mp-hero-con {
+   background: url(../images/spr-mp.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+.spr-s-hero-con {
+   background: url(../images/spr-s.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+.spr-kc-hero-con {
+   background: url(../images/spr-kc.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+.spr-hb-hero-con {
+   background: url(../images/spr-hb.png) no-repeat;
+   height: 195px;
+   background-size: cover;
+}
+
+
+.section-hero-heading-box {
+   align-self: end;
+}
+
+.section-text {
+   padding-bottom: 60px;
+}
+
+.section-text p {
+   font-size: 14px;
+   margin-bottom: 20px;
+   line-height: 22px;
+}
+
+#pi-hero-con {
+   background: url(../images/pi.png) no-repeat;
+   height: 195px;
+}
+
+#uc-hero-con {
+   background: url(../images/uc.png) no-repeat;
+   height: 195px;
+}
+
+#prize img{
+   width: 100%;
+   height: 181px;
+
+}
+
+#qa{
+   margin-bottom: 25px;
+}
+
+#E{
+   margin-bottom: 25px;
+}
+
+details[open]::after{
+   content: "🔍";
+}
+
+
+
+/* 7. ---Contact--- */
+
+#contact-hero-con {
+   background: url(../images/contact-hero.jpg) no-repeat;
+   height: 195px;
+}
+
+#contact-hero-con-dt {
+   background: url(../images/ct-dt.png) no-repeat;
+   height: 450px;
+   background-size: cover;
+}
+
+#contact-hero-heading-box {
+   align-self: end;
+}
+
+#contact-hero-text {
+   margin-top: 15px;
+   margin-bottom: 25px;
+}
+
+#contact-hero-address p {
+   margin-bottom: 20px;
+   font-size: 14px;
+   line-height: 22px;
+}
+
+#contact-hero-address {
+   margin-bottom: 30px;
+}
+
+#contact-hero-address h3 {
+   margin-bottom: 25px;
+}
+
+/* add */
+
+#contact-hero-form form {
+   display: flex;
+   flex-direction: column;
+}
+
+#contact-hero-form input,textarea {
+   padding: 22px;
+   border: 2px solid #d6d6d6d6;
+   background-color: #f7f7f7;
+   border-radius: 5px;
+   margin-bottom: 30px;
+   font: inherit;
+   width: auto;
+} 
+
+#contact-hero-form textarea {
+   height: 250px;
+}
+
+#contact-hero-form input[type="submit"] {
+   padding: 12px 28px;
+   background: #9a2018;
+   color: #fff;
+   border: none;
+   width: 150px;
+   align-self: flex-end;
+   transform: background-color 0.3s ease;
+}
+
+#contact-hero-form input[type="submit"]:active {
+   animation: pressButton 0.5s forwards;
+}
+
+
+@keyframes pressButton {
+   0% {
+       transform: scale(1);
+       background-color: #9a2018;/
+   }
+   60% {
+       transform: scale(0.7);
+       background-color: #5c1611;
+   }
+   100% {
+       transform: scale(1);
+       background-color: #9a2018;
+   }
+}
+
+
+/* 8. ---Footer--- */
+
+#footer-hero {
+   background-image: url(../images/footer.jpg);
+	background-repeat: no-repeat;
+   color: #fff;
+   font-size: 12px;
+   margin-top: 40px;
+   padding-bottom: 80px;
+   background-size: cover;
+}
+
+#footer-hero h3 {
+   margin-top: 30px;
+   font-size: 28px;
+   margin-bottom: 16px;
+}
+
+#footer-privacy .line-seperator {
+   margin-top: 0px;
+}
+
+#footer-contact-info h3 {
+   font-size: 23px;
+}
+
+#footer-contact-info p {
+   margin-bottom: 20px;
+   line-height: 18px;
+   font-size: 11px;
+}
